@@ -1,13 +1,21 @@
 # Ghulam Ahmad - AI/ML Enthusiast
 
-<div style="background-color:#1E90FF; color:white; padding: 20px; text-align:center;">
+<div style="background-color:#1E90FF; color:white; padding: 10px; text-align:center;">
     <h1>🌐 Home</h1>
-    <p>Welcome to my personal website! I am <strong>Ghulam Ahmad</strong>, an AI/ML enthusiast passionate about applying artificial intelligence and machine learning techniques to solve real-world problems. Explore my skills, projects, experience, and how to get in touch with me.</p>
+    <nav>
+        <a href="#about" style="color:white; margin: 10px; text-decoration:none;">About Me</a>
+        <a href="#skills" style="color:white; margin: 10px; text-decoration:none;">Skills</a>
+        <a href="#services" style="color:white; margin: 10px; text-decoration:none;">Services</a>
+        <a href="#experience" style="color:white; margin: 10px; text-decoration:none;">Experience</a>
+        <a href="#projects" style="color:white; margin: 10px; text-decoration:none;">Projects</a>
+        <a href="#certifications" style="color:white; margin: 10px; text-decoration:none;">Certifications</a>
+        <a href="#contact" style="color:white; margin: 10px; text-decoration:none;">Contact Me</a>
+    </nav>
 </div>
 
 ---
 
-<div style="background-color:white; color:#1E90FF; padding: 20px;">
+<div id="about" style="background-color:white; color:#1E90FF; padding: 20px;">
     <h2>👨‍🎓 About Me</h2>
     <p>I'm a motivated Electrical Engineering student at the <strong>University of Engineering and Technology, Lahore</strong>, with a keen interest in <strong>AI, NLP, and Computer Vision</strong>. Throughout my academic and professional journey, I've developed robust skills in machine learning and data analysis.</p>
     
@@ -20,7 +28,7 @@
 
 ---
 
-<div style="background-color:#1E90FF; color:white; padding: 20px;">
+<div id="skills" style="background-color:#1E90FF; color:white; padding: 20px;">
     <h2>🛠️ Skills</h2>
 
     <h3>Professional</h3>
@@ -44,7 +52,7 @@
 
 ---
 
-<div style="background-color:white; color:#1E90FF; padding: 20px;">
+<div id="services" style="background-color:white; color:#1E90FF; padding: 20px;">
     <h2>💼 Services</h2>
     <p>Here are some services I offer:</p>
     <ul>
@@ -57,7 +65,7 @@
 
 ---
 
-<div style="background-color:#1E90FF; color:white; padding: 20px;">
+<div id="experience" style="background-color:#1E90FF; color:white; padding: 20px;">
     <h2>💼 Experience</h2>
 
     <h3>NAVTTC - <em>Trainee (September 2023)</em></h3>
@@ -88,7 +96,7 @@
 
 ---
 
-<div style="background-color:white; color:#1E90FF; padding: 20px;">
+<div id="projects" style="background-color:white; color:#1E90FF; padding: 20px;">
     <h2>🔨 Projects</h2>
 
     <h3><a href="https://github.com/ghulam-ahmad-1/Sentimental_Analysis" style="color:#1E90FF">Sentimental Analysis Using Roberta</a></h3>
@@ -103,7 +111,7 @@
 
 ---
 
-<div style="background-color:#1E90FF; color:white; padding: 20px;">
+<div id="certifications" style="background-color:#1E90FF; color:white; padding: 20px;">
     <h2>📜 Certifications</h2>
     <ul>
         <li><strong>Programming with Python 3.X</strong> - <em>Simplilearn (August 2022)</em></li>
@@ -115,7 +123,7 @@
 
 ---
 
-<div style="background-color:white; color:#1E90FF; padding: 20px;">
+<div id="contact" style="background-color:white; color:#1E90FF; padding: 20px;">
     <h2>📞 Contact Me</h2>
     <p>Feel free to reach out for collaboration, projects, or just a friendly chat!</p>
     <ul>
