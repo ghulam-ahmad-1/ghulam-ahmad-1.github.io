@@ -31,7 +31,7 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
       <div class="top-btnn">
-        <a href="#" class="h-btn">Contact me</a>
+        <a href="#contact" class="h-btn">Contact me</a>
       </div>
     </header>
 
@@ -231,24 +231,47 @@
 
     <section class="contact" id="contact">
       <div class="center-text" data-aos="fade-down">
-        <h2>Contact<span>me</span></h2>
+          <h2>Contact<span>me</span></h2>
       </div>
+
       <div class="contact-form" data-aos="zoom-in">
-        <form action="">
-          <input type="text" placeholder="Your name" required />
-          <input type="email" placeholder="Email Address..." required />
-          <textarea
-            name=""
-            id=""
-            cols="30"
-            rows="10"
-            placeholder="Write Message Here."
-            required
-          ></textarea>
-          <input type="submit" value="Send Message" class="send-btn" />
-        </form>
+          <form id="contactForm">
+              <input type="text" name="name" placeholder="Your name" required />
+              <input type="email" name="email" placeholder="Email Address..." required />
+              <textarea
+                  name="message"
+                  cols="30"
+                  rows="10"
+                  placeholder="Write Message Here."
+                  required
+              ></textarea>
+              <input type="submit" value="Send Message" class="send-btn" />
+          </form>
+          <div class="thank-you-message" style="display:none;">Thank you! Your message has been sent.</div>
       </div>
-    </section>
+  </section>
+
+  <script>
+      // Initialize EmailJS with your User ID
+      (function () {
+          emailjs.init("LWW4bjqJTAP7lJXZy"); // Replace with your EmailJS User ID
+      })();
+
+      // Handle form submission
+      document.getElementById("contactForm").addEventListener("submit", function (event) {
+          event.preventDefault(); // Prevent the default form submission
+
+          // Send email using EmailJS
+          emailjs.sendForm("service_62rk2ji", "template_t33nhks", this)
+              .then(function() {
+                  // Show thank you message
+                  document.querySelector(".thank-you-message").style.display = "block";
+                  document.getElementById("contactForm").reset(); // Reset the form
+              }, function(error) {
+                  console.error("Failed to send email:", error);
+              });
+      });
+  </script>
 
     <div class="footer">
       <div class="copyright">
@@ -258,7 +281,7 @@
         <i class="ri-arrow-up-s-fill"></i>
       </a>
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
     <script src="./script.js"></script>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
