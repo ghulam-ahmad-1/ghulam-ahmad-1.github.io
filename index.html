@@ -234,7 +234,8 @@
       </div>
 
       <div class="contact-form" data-aos="zoom-in">
-          <form id="contactForm">
+          <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
+            <input type="hidden" name="access_key" value="0e6bd919-619f-4d52-8177-3dbfb7e65aac">
               <input type="text" name="name" placeholder="Your name" required />
               <input type="email" name="email" placeholder="Email Address..." required />
               <textarea
@@ -250,27 +251,6 @@
       </div>
   </section>
 
-  <script>
-      // Initialize EmailJS with your User ID
-      (function () {
-          emailjs.init("LWW4bjqJTAP7lJXZy"); // Replace with your EmailJS User ID
-      })();
-
-      // Handle form submission
-      document.getElementById("contactForm").addEventListener("submit", function (event) {
-          event.preventDefault(); // Prevent the default form submission
-
-          // Send email using EmailJS
-          emailjs.sendForm("service_62rk2ji", "template_t33nhks", this)
-              .then(function() {
-                  // Show thank you message
-                  document.querySelector(".thank-you-message").style.display = "block";
-                  document.getElementById("contactForm").reset(); // Reset the form
-              }, function(error) {
-                  console.error("Failed to send email:", error);
-              });
-      });
-  </script>
     <div class="footer">
       <div class="copyright">
         <p>2024 Ghulam Ahmad, All Right Reserved.</p>
