@@ -15,3 +15,5 @@ window.onscroll = () =>{
     menu.remove.toggle('bx-x');
     navlist.remove.toggle('active');
 }
+
+  
